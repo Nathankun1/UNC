@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Passenger Name
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+  
+<ion-content>
+  <ion-list *ngIf="dataList.length > 0">
+    <ion-item *ngFor="let user of dataList" (click)="presentAlert(user.id)">
+      <h2>{{user.name}} {{user.name1}}</h2>
+      <p>{{user.name12}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

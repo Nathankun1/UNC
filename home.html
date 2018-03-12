@@ -1,0 +1,48 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="assets/imgs/Raymond_Transportation.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+<ion-header>
+  <ion-navbar toolbar color="light">
+    <ion-title>
+      <img src="assets/imgs/Raymond_Transportation1.png">
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+
+  <div class="list">
+    
+    <ion-item>
+    <ion-icon full icon-left [navPush]="nextPage">
+      <ion-icon name="qr-scanner">
+      </ion-icon>
+      Scanner
+    </ion-icon>
+  </ion-item>
+  
+  <ion-item>
+    <ion-icon full icon-left [navPush]="PassengerList">
+      <ion-icon name="people">
+      </ion-icon>
+      Passenger List
+    </ion-icon>
+  </ion-item>
+
+</div>
+
+ <!-- <img src="assets/imgs/Raymond_Transportation.png" class="logo">
+  
+  
+
+  <div style="position: absolute; bottom: 120px; text-align:center; z-index: 1000; width:100%">
+    <button ion-button color="primary" round outline [navPush]="nextPage">Click Me</button>
+  </div>-->
+
+</ion-content>
